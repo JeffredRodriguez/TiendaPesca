@@ -1,0 +1,212 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    cursor: url('../facturacionCompra/img/cursor_anzuelo.png'), default;
+}
+
+#titulo_facturacion{
+    font-size:xx-large;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    border-bottom: solid white 1px;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}
+
+#contenedor {
+    background-color: #2a1e4e33;
+    padding: 10px;
+    display: flexbox;
+    justify-content: left;
+    align-items: center;
+    height: 70vh;
+    margin-top: 0px; /* Ajusta este valor para mover el contenedor más abajo */
+}
+
+form {
+    margin: 0; /* Elimina el margen por defecto del formulario */
+    padding: 10px 0px 0px 0px; /* Ajusta el padding del formulario */
+    margin-left: 30px; /* Agrega un margen izquierdo para moverlo a la derecha */
+}
+
+/* Alinea el formulario a la izquierda */
+form.row.g-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Opcional: Estilos para los campos del formulario */
+.form-control {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para etiquetas del formulario */
+.form-label {
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#banner{
+    background: url('../facturacionCompra/img/Green\ and\ Yellow\ Simple\ Clean\ Shoes\ Banner.png'), center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+}
+
+/*estilos del footer*/
+
+#pie__de__pagina {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0e2f5b;
+    padding: 20px;
+    margin-top: 200px; /* Ajusta este valor para mover el pie de página más abajo */
+}
+.seccion__informacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.informacion{
+    margin: 15px 0px 10px 0px;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+.informacion:hover{
+    border-left: #ddd solid 3px;
+    padding: 0px 0px 0px 20px;
+}
+.titulo__footer{
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0px 0px 10px 0px;
+}
+#redes{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius:10px ;
+    margin: 200px 0px 0px 60px;
+    width: 200px;
+}
+.img__redes{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px 0px 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+#derechos{
+    background: #0e2f5b;
+    text-align: center;
+    color: white;
+    padding: 3px;
+}
+
+/* Fin estilos footer*/
+
+/* Inicio del diseño para el contenedor de producto y subtotal*/ 
+.contenedor-productos {
+    width: 60%;
+    margin: -420px 20px 0; /* Margen superior ajustado */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #2a1e4e33;
+    color: white;
+    float: right;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.producto img {
+    width: 100px; /* Ajustar el tamaño de la imagen */
+    height: auto;
+    margin-right: 15px;
+}
+
+.detalle {
+    flex: 1;
+}
+
+.detalle h3 {
+    margin: 0;
+}
+
+.subtotal {
+    margin-left: auto;
+    font-weight: bold;
+}
+/* Fin del diseño*/
+
+.enlace-con-linea {
+    text-decoration: underline;
+    color: white;
+    font-size: 18px;
+}
+
+body {
+    background: url(/img/Green\ and\ Yellow\ Simple\ Clean\ Shoes\ Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.logo-pequeno {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: -10px; /* Ajusta el margen superior para moverlo hacia arriba */
+}
+
+#navegacion, #navegacion ul, #navegacion a, #navegacion li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+    font-size: large;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e2f5b;
+    height:0px;
+    padding: 50px 40px 40px 20px;
+}
+
+header {
+    display: block;
+}

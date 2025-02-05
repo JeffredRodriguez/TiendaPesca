@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="krakenLogin.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <section id="seccion_registro">
+        <div id="contenedor" class="filter">
+        <h1 id="titulo_registro">Bienvenidos</h1>
+
+        <div id="admin_and_user">
+            <div class="items_admin_user">
+            <input type="checkbox" name="admin" id="admin">
+            <h6>Admin</h6></div>
+            <div class="items_admin_user">
+                <input type="checkbox" name="user" id="user">
+                <h6>Usuario</h6></div>
+        </div>
+
+        <form method="get">
+            <input type="text" placeholder="Ingrese su usuario" class="input_form_registro" type="email" name="usuario" id="input_usuario">
+            <input type="password" placeholder="ingrese su contraseña" class="input_form_registro" name="password" id="input_contrasena">
+            <input id="boton_registro" type="button" value="Login">
+        </form>
+
+        <div id="olvido_registro">
+            <a href="">¿Olvidaste tu contraseña?</a>
+            <a href="">Registrate aquí</a>
+        </div>
+    </div>
+
+    </section>
+
+   
+
+    <script src="../login-kraken/login.js"></script>
+    
+</body>
+</html>

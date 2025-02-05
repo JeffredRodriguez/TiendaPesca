@@ -1,0 +1,253 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    cursor: url('../imagenes_de_la_web/cursor_anzuelo.png'), default;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0e2f5b;
+    height:60px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.imgLogo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    
+}
+
+.img__redes{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px 0px 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.imagen_header{
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 0px 20px;
+}
+
+#navegacion, #navegacion ul, #navegacion a, #navegacion li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+    font-size: large;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
+li:hover{
+    border-bottom: #ddd solid 2px;
+}
+
+    /* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#info-contacto {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(to right, #00509e, #003f7d);
+    color: white;
+    border-radius: 10px;
+}
+
+#info-contacto h2,
+.detalles-contacto h2 {
+    color: #00509e; /* Color azul */
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: bold; /* Resaltar el texto */
+    border-bottom: 2px solid #00509e; /* Línea decorativa */
+    padding-bottom: 5px;
+}
+
+/* Estilo de los contenedores */
+.detalles-contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.detalles-contacto div {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detalles-contacto div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Listas */
+.detalles-contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.detalles-contacto li {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detalles-contacto li strong {
+    color: #00509e;
+}
+
+.detalles-contacto li i {
+    color: #00509e;
+    font-size: 20px;
+}
+
+/* Redes sociales */
+.detalles-contacto a {
+    color: #00509e;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.detalles-contacto a:hover {
+    color: #003f7d;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .detalles-contacto {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Formulario */
+#formulario-contacto {
+    margin: 50px 0;
+}
+
+#formulario-contacto form {
+    background: linear-gradient(to bottom, #ffffff, #f7f9fc);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #e3e3e3;
+}
+
+#formulario-contacto h2 {
+    text-align: center;
+    color: #00509e;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, textarea:focus {
+    border-color: #00509e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 80, 158, 0.5);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    background: linear-gradient(to right, #00509e, #003f7d);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(to right, #003f7d, #002b5c);
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+    background: #002b5c;
+}
+
+/* Agregar un mensaje debajo de los inputs */
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #formulario-contacto form {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}

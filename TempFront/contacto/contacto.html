@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../contacto/contacto.css">
+    <title>Contacto | Kraken Lure</title>
+</head>
+<body>
+    <header id="menu">
+        <img class="imgLogo" src="../imagenes_de_la_web/logo_Kraken Lures.jpg" alt="Logo Kraken Lure">
+        
+        <nav id="navegacion">
+            <ul>
+                <li><a href="../principal/index.html">Inicio</a></li>
+                <li><a href="../Productos/productos.html">Productos</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="../contacto/contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="login__compras">
+            <a href="../login-kraken/KrakenLogin.html"><img class="imagen_header" src="../imagenes_de_la_web/usuario.png" alt="login"></a>
+            <img class="imagen_header" id="carritoEmergentes" src="../imagenes_de_la_web/carrito-de-compras.png" alt="carrito">
+  
+              <div id="popup" class="popup">
+                  <div class="popup-content">
+                      <div id="carritoContenido"></div>
+                  </div>
+              </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="info-contacto">
+            <h1>Contacto</h1>
+            <p>Si tienes alguna pregunta, comentario o necesitas ayuda, no dudes en contactarnos. Nuestro equipo estará encantado de asistirte.</p>
+            
+            <div class="detalles-contacto">
+                <div>
+                    <h2>Información de contacto</h2>
+                    <ul>
+                        <li><strong>Dirección:</strong> Avenida Mar Azul, Edificio Kraken Lure, Costa Rica</li>
+                        <li><strong>Teléfono:</strong> +506 8888 9999</li>
+                        <li><strong>Email:</strong> contacto@krakenlure.com</li>
+                        <li><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Encuéntranos en redes sociales</h2>
+                    <ul>
+                        <li class="redes-sociales">
+                            <img class="img__redes" src="../imagenes_de_la_web/facebook.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </li>
+                        <li class="redes-sociales">
+                            <img class="img__redes" src="../imagenes_de_la_web/instagram.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </li>
+                        <li class="redes-sociales">
+                            <img class="img__redes" src="../imagenes_de_la_web/whatsapp.png" alt="WhatsApp">
+                            <span>WhatsApp</span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="formulario-contacto">
+            <h2>Envíanos un mensaje</h2>
+            <form action="/enviar_formulario" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kraken Lure. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
